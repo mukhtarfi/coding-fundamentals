@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.checked {
+    color: orange;
+}
+
+.container {
+    border: 2px solid black;
+    padding: 50px;
+    width: 500px;
+    border-radius: 10px;
+}
+
+.customer {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.customer-avatar {
+    height: 60px;
+    border-radius: 9999px;
+}
+
+.customer-name {
+    display: flex;
+    flex-direction: column;
+}
+
+.star {
+    margin-top: 5px;
+}
+
+.review {
+    margin-top: 20px;
+    font-style: italic;
+}
