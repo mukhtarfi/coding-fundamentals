@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build a GitHub User Search</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div class="main__container">
+        <div class="getuser__searchbox">
+            <form action="search" method="get">
+                <input type="text" name="text" id="get__input">
+            </form>
+    
+            <button id="getuser__btn">Get User</button>
+        </div>
+    
+        <div class="result__searchbox">
+            <div class="user__avatar">
+                <img id="user__image" src="" alt="">
+            </div>
+    
+            <div class="user__info">
+                <div class="username__box">
+                    <h1 class="name"></h1>
+                </div>
+    
+                <div class="userbio__box">
+                    <p class="bio"></p>
+                </div>
+    
+                <div class="userjoined__box">
+                    <p id="joined"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
