@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: none;
+    font-family: system-ui;
+}
+
+.main__box {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.main__box > * + * {
+    margin-top: 15px;
+}
+
+.page__title {
+    background-color: black;
+    color: white;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.info__box {   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+/* for main group for cat listing info (ul) */
+.cat__info {   
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    list-style-type: none;
+    max-width: 100rem;
+}
+
+.cat__info > * + * {
+    margin-bottom: 3rem;
+}
+
+/* for list of cat box info & description (li) */
+.cat__box {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 5px 15px 3px gray;
+
+    width: 30rem;
+    height: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cat__group {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.image__container {
+    width: 100%;
+}
+
+.cat__image {
+    width: 30rem;
+    height: 30rem;
+}
+
+.name__font {
+    margin: 25px;
+}
+
+.description__font {
+    margin: 0px 25px;
+    text-align: justify;
+}
+
+.box__name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.5rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: black;
+    color: white;
+}
+
