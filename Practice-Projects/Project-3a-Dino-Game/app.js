@@ -15,9 +15,6 @@ var score = 0
 var GameStarted = false
 var GameOver = false
 
-var Jumping = false
-var SelfPlayMode = false
-
 // (RootElem, "--game-speed", GameSpeed)
 function setCustomProperty(elem, prop, value) {
     elem.style.setProperty(prop, value)
@@ -29,25 +26,9 @@ function handleJump(e) {
     var audio = document.querySelector(".audio-jump")
     audio.play()
     DinoElem.classList.add("dino-jump")
-    Jumping = true
     DinoElem.addEventListener("animationend", function() {
-        Jumping = false
         DinoElem.classList.remove("dino-jump")
     })
-}
-
-function shouldJump() {
-    var minGap = 250
-    var cactusXPos = CactusElem.getBoundingClientRect().x
-
-    // validations
-    if (cactusXPos <= 0 || Jumping) return false
-
-    if (cactusXPos < minGap) {
-        return true
-    }
-
-    return false
 }
 
 function startGame() {
@@ -72,13 +53,6 @@ function updateGame() {
     setCustomProperty(RootElem, "--jump-speed", JumpSpeed)
     setCustomProperty(RootElem, "--max-jump", MaxJump)
     setCustomProperty(RootElem, "--speed-scale", SpeedScale)
-
-    // auto-play
-    if (SelfPlayMode) {
-        if (shouldJump()) {
-            handleJump({ code: "Space" }) // simulate a jump
-        }
-    }
 
     // update the score
     updateScore()
