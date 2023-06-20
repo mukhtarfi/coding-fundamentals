@@ -1,0 +1,71 @@
+1.  Loop is a type of programming element that executes a repetitive task with a set number of times until the process is complete.
+    The use of loops is to shorten a repetitive task from hundreds of lines to just a few lines, make the code more manageable, organized,
+    save time and minimize errors such as a typo error.
+
+    Example of loop:-
+    
+    What if we want to find the sum of 2 for all the numbers from 0 to 10.
+
+    The used of loop example as follows:-
+
+    for (i=0; i<=10; i++) {
+	    
+        let total = 0;
+	    
+        total = i + 2
+        
+        console.log(`The sum of 2 for number ${i} is ${total}`)
+    
+    }
+
+    Thus the result will be like this:-
+
+    The sum of 2 for number 0 is 2
+    The sum of 2 for number 1 is 3
+    The sum of 2 for number 2 is 4
+    The sum of 2 for number 3 is 5
+    The sum of 2 for number 4 is 6
+    The sum of 2 for number 5 is 7
+    The sum of 2 for number 6 is 8
+    The sum of 2 for number 7 is 9
+    The sum of 2 for number 8 is 10
+    The sum of 2 for number 9 is 11
+    The sum of 2 for number 10 is 12
+
+===============================================================================================================================================
+
+2.  console.log()
+    - to display the result or information of the operation or function onto the console.
+
+    return
+    - to return or pass back the result or information into the function.
+
+================================================================================================================================================
+
+3.  True and False is a value used in booleans for comparison. Thus, other name for true is truthy values and for false is falsy value.
+    Truthy and Falsy values is a value used in booleans for comparison. Turthy value represent if the expression is true and falsy value if the expression is false.
+
+    For example:-
+
+    Is number 20 greater than 15.
+
+    Example of booleans:-
+
+    if (20>15) {
+        console.log('It is true')
+    } else {
+        console.log('Not true')
+    }
+
+    thus, the result shown in console is "It is true".
+
+================================================================================================================================================
+
+4.  Client send a request information to the DNS Server through the internet service provider to get the ip address of the request. Then, DNS server
+    response to the request and send it to the server. Then, the server response and send the it back to the client through ISP.
+
+================================================================================================================================================
+
+5.  When client enter a website for example google.com, the client is send a request to the server to get all the content about the website.
+    Then, the server will respond by send it back to the client and a google.com website appear on the client side. Website are made up of 3 different
+    files which are html, css and javascript.

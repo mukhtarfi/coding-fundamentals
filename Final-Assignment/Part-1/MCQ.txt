@@ -1,0 +1,19 @@
+1. A. Blank
+
+2. B. console.log(`i like writing ${secret}`)
+
+3. D. hello is displayed because .toUpperCase() does not mutate the string.
+
+4. D. Direct Linking
+
+5. C. [4,6,8,12]
+
+6. A, B, C
+
+7. A. 12
+
+8. A. 7
+
+9. C. splice()
+
+10. B. pop()
